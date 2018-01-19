@@ -4,7 +4,7 @@ This project requires npm. There are several different ways of installing it dep
 
 After you've installed node and npm, navigate to the directory where you want to run the webpack server from.
 
-1. git clone 
+1. git clone https://github.com/dominiquemb/jibble-test.git
 2. cd jibble-test
 3. npm install webpack --save
 4. npm install webpack-dev-server --save
