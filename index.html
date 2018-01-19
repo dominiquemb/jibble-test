@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title>Jibble Test</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body ng-app="jibbleApp">
+    <div class="jibble-table" ng-class="{'loaded': jibbleTableLoaded}">
+        <div class="loading-text">
+            Loading..
+        </div>
+        <div class="loaded-content">
+            <button class="refresh-button" ng-click="refreshData()">Refresh Data</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Post</th>
+                        <th>Album</th>
+                        <th>User</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="entry in dataToDisplay">
+                        <td>{{ entry.post.title }}</td>
+                        <td>{{ entry.album.title }}</td>
+                        <td>{{ entry.user.name }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.6/angular.min.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.js"
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous"></script>
+    <script src="bundle.js"></script>
+  </body>
+</html>

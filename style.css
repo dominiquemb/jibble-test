@@ -1,0 +1,36 @@
+.jibble-table {
+    width: 100%;
+}
+
+.jibble-table .loading-text {
+    display: block;
+    text-align: center;
+    color: #ccc;
+    font-size: 30px;
+    font-family: arial;
+}
+
+.jibble-table .loaded-content {
+    display: none;
+}
+
+.jibble-table.loaded .loaded-content {
+    display: block;
+}
+
+.jibble-table .loaded-content .refresh-button {
+    margin-bottom: 20px;
+}
+
+.jibble-table.loaded .loading-text {
+    display: none;
+}
+
+.jibble-table thead th {
+    text-align: left;
+}
+
+.jibble-table td,
+.jibble-table th {
+    width: 33%;
+}
